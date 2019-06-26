@@ -1,0 +1,50 @@
+.home{
+    width: 100%;
+    & *{
+        width: 100%;
+    }
+}
+
+.header{
+    min-height: 450px;
+    background-image: url("~/images/images.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.menu{
+    text-align: center;
+    & *{
+        padding: 10px;
+        font-size: 20pt;
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    .hot_Dog{
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        &>*{
+            width: 50%;
+            height: 100%;
+            flex: 1;
+            //display: flex;
+               
+        }
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+        .about_hotDog {
+            display: table;
+            span{
+                font-size: 15pt;
+                text-align: center;
+                vertical-align: middle;
+                display: table-cell;
+            }
+        }
+    }
+    
+}
